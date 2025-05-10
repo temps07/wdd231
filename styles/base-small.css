@@ -1,0 +1,236 @@
+body{
+    font-family: "Roboto", serif;
+    font-weight: 400;
+}
+h1 {
+    text-align: center;
+    color: rgb(62, 33, 129);
+}
+figcaption {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    background-color: rgb(62, 33, 129);
+    color: white;
+    padding: 15px;
+}
+.sec1 {
+    max-width: 1000px;
+}
+.sec2 img {
+    width: 350px;
+    position: relative;
+    left: 10px;
+}
+figcaption {
+    padding: 20px;
+}
+.sec3 {
+    margin: 20px 30px 20px 30px;
+}
+nav {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+header nav a{
+    color: white;
+    text-decoration: none;
+    display: none;
+    padding: 1rem;
+}
+a:hover{
+    color: rgb(196, 171, 255);
+    border: 1px solid white;
+    font-weight: 400;
+}
+.open a {
+    display: block;
+}
+.active{
+    color: rgb(141, 1, 255);
+}
+header nav a{
+    color: white;
+    text-decoration: none;
+}
+#menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2em;
+    padding: 10px;
+    color: white;
+}
+#menu::before{
+    content: "☰";
+}
+#menu.open::before{
+    content: "X";
+}
+.top {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 100;
+    background-color: rgb(62, 33, 129);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+span {
+    padding: 20px;
+    margin: 20px;
+}
+a:hover{
+    color: rgb(196, 171, 255);
+    border: 1px solid white;
+}
+
+.course-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.course-card.completed {
+    background-color: #f0f9eb;
+    border-left: 4px solid #4caf50;
+}
+
+.course-card.incomplete {
+    background-color: #fff8e1;
+    border-left: 4px solid #ff9800;
+}
+
+.course-card.CSE {
+    border-top: 3px solid #2196f3;
+}
+
+.course-card.WDD {
+    border-top: 3px solid #9c27b0;
+}
+
+.course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.status-badge {
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.status-badge.completed {
+    background-color: #4caf50;
+    color: white;
+}
+
+.status-badge.incomplete {
+    background-color: #ff9800;
+    color: white;
+}
+
+.credits {
+    font-weight: bold;
+    color: #555;
+    margin: 0.5rem 0;
+    display: none;
+}
+
+.description {
+    margin: 1rem 0;
+    line-height: 1.5;
+    display: none;
+}
+
+.technologies {
+    margin: 1rem 0;
+    display: none;
+}
+
+.tech-tag {
+    display: inline-block;
+    background-color: #e0e0e0;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    margin: 0.25rem;
+    font-size: 0.8rem;
+    display: none;
+}
+
+.certificate {
+    font-style: italic;
+    color: #666;
+    margin-top: 1rem;
+    display: none;
+}
+
+/* Filter controls */
+.filter-controls {
+    margin: 1rem 0;
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter-btn {
+    padding: 0.8rem 1.2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+    transition: all 0.2s ease;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+.filter-btn.active {
+    background-color: #2196f3;
+    color: white;
+}
+/* Search input */
+/* #course-search {
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.no-courses {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+} */
+#certificate-section {
+    padding: 20px;
+}
+footer {
+    text-align: center;
+    background-color: rgb(110, 56, 235);
+    height: 50px;
+    color: white;
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    padding: 30px;
+    
+}
+#lastModified {
+    color: rgb(255, 255, 0);
+    
+}

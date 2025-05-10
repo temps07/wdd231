@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Home - Temple Ohanu</title>
+    <meta name="description" content="Home Page.">
+    <meta name="author" content="Temple Ohanu">
+    <link rel="stylesheet" href="styles/base-small.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script src="scripts/card.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <img src="images/profile.jpg" alt="header Image" width="150" height="170">
+            <span style="color: white">Temple V. Ohanu</span>
+            <button type="button" id="menu"></button>
+        </div>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Chamber</a>
+            <a href="#">Final</a>
+            <a href="#">GitHub Profile</a>
+            <a href="linkedln.com">Linkedln</a>
+        </nav>
+    </header>
+    <h1>Home</h1>
+    <main>
+        <section class="sec1">
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section class="sec2">
+            <h2>Lagos, Nigeria</h2>
+            <figure>
+                <img src="images/lagos.jpg" alt="View of Vctoria Island, Lagos" ">
+                <figcaption>Lagos Nigeria</figcaption>
+            </figure>
+        </section>
+        <section class="sec3">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="controls">
+                
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-department="all">All Courses</button>
+                    <button class="filter-btn" data-department="WDD">WDD Courses</button>
+                    <button class="filter-btn" data-department="CSE">CSE Courses</button>
+                </div>
+            </div>
+            
+            <div id="total-credits"></div>
+            
+            <section id="certificate-section">
+            </section>
+        </section>
+    </main>
+    <footer>
+        <span id="currentyear"></span>🌴Temple Victor Ohanu🌴 Nigeria
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
