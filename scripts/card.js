@@ -1,5 +1,5 @@
 const menuButton = document.getElementById('menu');
-const navigation = document.querySelector('nav');
+const navigation = document.querySelector('#animate');
 
 // Add event listener to menu button
 menuButton.addEventListener('click', () => {

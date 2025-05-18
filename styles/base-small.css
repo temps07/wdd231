@@ -31,17 +31,25 @@ figcaption {
 }
 nav {
     padding: 10px;
+    background-color: black;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-out, visibility 0.3s ease-out, transform 0.3s ease-out;
+    overflow: hidden;
+    transform: translateY(-20px);
+        
+}
+nav.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    background-color: black;
 }
-
 header nav a{
     color: white;
     text-decoration: none;
-    display: none;
     padding: 1rem;
 }
 a:hover{
@@ -49,15 +57,8 @@ a:hover{
     border: 1px solid white;
     font-weight: 400;
 }
-.open a {
-    display: block;
-}
 .active{
     color: rgb(141, 1, 255);
-}
-header nav a{
-    color: white;
-    text-decoration: none;
 }
 #menu {
     background-color: transparent;

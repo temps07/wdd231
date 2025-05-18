@@ -1,0 +1,72 @@
+[
+    {
+      "name": "Acme Corporation",
+      "address": "123 Main St, Anytown, AN 12345",
+      "phone": "(555) 123-4567",
+      "url": "https://www.acme-corp.com",
+      "image": "company1.png",
+      "membershipLevel": 3,
+      "industry": "Manufacturing",
+      "joined": "2018-05-15"
+    },
+    {
+      "name": "Beta Solutions",
+      "address": "456 Oak Ave, Somewhere, SW 67890",
+      "phone": "(555) 234-5678",
+      "url": "https://www.beta-solutions.com",
+      "image": "company2.png",
+      "membershipLevel": 2,
+      "industry": "Technology",
+      "joined": "2020-02-10"
+    },
+    {
+      "name": "Gamma Industries",
+      "address": "789 Pine Rd, Nowhere, NW 34567",
+      "phone": "(555) 345-6789",
+      "url": "https://www.gamma-ind.com",
+      "image": "company3.jpeg",
+      "membershipLevel": 1,
+      "industry": "Retail",
+      "joined": "2022-11-22"
+    },
+    {
+      "name": "Delta Services",
+      "address": "321 Elm Blvd, Anywhere, AW 45678",
+      "phone": "(555) 456-7890",
+      "url": "https://www.delta-serv.com",
+      "image": "company4.jpeg",
+      "membershipLevel": 2,
+      "industry": "Professional Services",
+      "joined": "2019-08-05"
+    },
+    {
+      "name": "Epsilon Group",
+      "address": "654 Cedar Ln, Everywhere, EW 56789",
+      "phone": "(555) 567-8901",
+      "url": "https://www.epsilon-group.com",
+      "image": "company5.png",
+      "membershipLevel": 3,
+      "industry": "Finance",
+      "joined": "2017-03-18"
+    },
+    {
+      "name": "Zeta Systems",
+      "address": "987 Maple Dr, Somewhere, SW 67891",
+      "phone": "(555) 678-9012",
+      "url": "https://www.zeta-sys.com",
+      "image": "company6.png",
+      "membershipLevel": 1,
+      "industry": "Technology",
+      "joined": "2023-01-30"
+    },
+    {
+      "name": "Eta Partners",
+      "address": "159 Birch Ct, Nowhere, NW 78901",
+      "phone": "(555) 789-0123",
+      "url": "https://www.eta-partners.com",
+      "image": "company7.jpeg",
+      "membershipLevel": 2,
+      "industry": "Consulting",
+      "joined": "2021-07-14"
+    }
+  ]
