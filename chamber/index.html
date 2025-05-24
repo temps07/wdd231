@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Directory - Temple Ohanu</title>
+    <meta name="description" content="Business Directory Page.">
+    <meta name="author" content="Temple Ohanu">
+    <meta property="og:title" content="WDD 231 - Home - Temple Ohanu">
+    <meta property="og:description" content="Directory page of my WDD 231 assignment.">
+    <meta property="og:image" content="https://i.pinimg.com/736x/18/47/43/1847439cf9425db0179030403738b87f.jpg">
+    <meta property="og:url" content="https://temps07.github.io/wdd231/">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <link rel="stylesheet" href="styles/home-small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script src="script/weather.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <img src="images/profile.jpg" alt="header Image" width="150" height="170">
+            <p>Temple<br>chamber of commerce</p>
+            <button type="button" id="menu" aria-label="Toggle navigation menu"></button>
+        </div>
+        <nav id="animate">
+            <a href="#" class="active">Home</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+            <a href="#">Discover</a>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="images/heroimage.jpg" alt="Random Hero Image" width="75%">
+            <div class="hero-content">
+                <button id="ctaBtn">Join Our Community</button>
+            </div>
+        </div>
+        <h1>Home</h1>
+        <section class="events-weather">
+            <div class="events">
+                <h2>Events</h2>
+            </div>
+            <div class="weather">
+                <h2>Weather</h2>
+                <h2 id="town"></h2>
+                <img id="graphic" src="" alt="">
+                <p id="description"></p>
+                <p id="temperature"></p>
+            </div>
+            <div>
+                <h2>Weather Forecast</h2>
+                <p><strong>Today</strong>: <span id="today"></span></p>
+                <p><strong>Tomorrow</strong>: <span id="tommorow"></span></p>
+                <p><strong><span id="nextTomorrow"></span></strong>: </p>
+            </div>
+        </section>
+        <section class="business">
+            <div class="view-toggle">
+                <button id="gridBtn">Grid View</button>
+                <button id="listBtn">List View</button>
+            </div>
+            <div id="spotlightsContainer"></div>
+            <div id="membersContainer"></div>
+        </section>
+    </main>
+ 
+    <footer>
+        <section class="contact-info">
+            <p>Temple Chamber of commerce</p>
+            <p>10 Rue De La Paix</p>
+            <p>Timbuktu, Mail 999</p>
+            <p>info@timbuktucc.org</p>
+            <p>2235552300</p>
+        </section>
+        <section class="social-media">
+            <nav class="sociallinks">
+                <a href="https://facebook.com" aria-label="Facebook">
+                    <img src="images/facebookwebp.webp" alt="Facebook Icon">
+                </a>
+                <a href="https://instagram.com" aria-label="Instagram">
+                    <img src="images/Instagram.webp" alt="Instagram Icon">
+                </a>
+                <a href="https://whatsapp.com" aria-label="WhatsApp">
+                    <img src="images/whatsapp.webp" alt="Whatsapp Icon">
+                </a>
+            </nav>
+        </section>
+        <section class="copyright">
+            <p>WDD231 Class Project</p>
+            <p>Temple Ohanu</p>
+            <span id="currentyear"></span>Temple Chamber of Commerce
+            <p id="lastModified"></p>
+        </section>
+    </footer>
+</body>
+</html>
