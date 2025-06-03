@@ -77,7 +77,7 @@ const totalCreditsElement = document.querySelector('#total-credits');
 
 // Initialize the page
 function init() {
-    
+    // displayCourseDetails(course);
     displayCourses(courses);
     updateTotalCredits(courses);
     setupEventListeners();
@@ -181,6 +181,23 @@ document.addEventListener('DOMContentLoaded', init);
 
 const currentYear = new Date().getFullYear();
 document.getElementById("currentyear").textContent = `©${currentYear}`;
-
 const lastModified = document.lastModified;
 document.getElementById("lastModified").textContent = `LastModified: ${lastModified}`;
+
+function displayCourseDetails(course) {
+  courseDetails.innerHTML = '';
+  courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+  courseDetails.showModal();
+  
+  closeModal.addEventListener("click", () => {
+    courseDetails.close();
+  });
+}

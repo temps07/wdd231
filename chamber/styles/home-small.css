@@ -159,7 +159,7 @@ h1 {
 
 .view-toggle button {
     padding: 0.75rem 1.5rem;
-    background-color: #4CAF50;
+    background-color: #2d9b33;
     color: white;
     border: none;
     border-radius: 5px;
@@ -169,7 +169,7 @@ h1 {
 }
 
 .view-toggle button:hover {
-    background-color: #45a049;
+    background-color: #1a611e;
 }
 
 .view-toggle button.active {

@@ -1,0 +1,39 @@
+/* Styles for larger screens */
+@media screen and (min-width: 768px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 1rem;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    section {
+        display: grid;
+    }
+    form {
+        flex: 0 0 60%;
+    }
+
+    .membership-cards {
+        flex: 0 0 35%;
+        margin-top: 0;
+    }
+
+    .card {
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+}

@@ -1,0 +1,223 @@
+
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Application Form</title>
+    <title>WDD 231 - Join - Temple Ohanu</title>
+    <meta name="description" content="Join Page.">
+    <meta name="author" content="Temple Ohanu">
+    <meta property="og:title" content="WDD 231 - Home - Temple Ohanu">
+    <meta property="og:description" content="Join page of my WDD 231 assignment.">
+    <meta property="og:image" content="https://i.pinimg.com/736x/18/47/43/1847439cf9425db0179030403738b87f.jpg">
+    <meta property="og:url" content="https://temps07.github.io/wdd231/">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/join-small.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+    <script src="scripts/join.js"></script> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Chamber</title>
+    <link rel="stylesheet" href="styles/join-small.css" media="screen">
+    <link rel="stylesheet" href="styles/join-large.css" media="screen and (min-width: 768px)">
+</head>
+<body>
+    <header>
+        <h1>Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#" class="active">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Membership Application</h2>
+        <section class="form">
+        <form id="joinForm" method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>
+                    First Name:
+                    <input type="text" name="firstName" required title="Please enter your first name" autocomplete="given-name">
+                </label>
+                <label>
+                    Last Name:
+                    <input type="text" name="lastName" required title="Please enter your last name" autocomplete="family-name">
+                </label>
+                <label>
+                    Title:
+                    <input type="text" name="title" title="Please enter your organizational title" autocomplete="organization-title" 
+                           pattern="[a-zA-Z\- ]{7,}" required>
+                </label>
+                <label>
+                    Email:
+                    <input type="email" name="email" required title="Please enter a valid email address" 
+                           autocomplete="email" placeholder="example@domain.com">
+                </label>
+                <label>
+                    Mobile Phone:
+                    <input type="tel" name="phone" required title="Please enter your mobile phone number" 
+                           autocomplete="tel">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Organization Information</legend>
+                <label>
+                    Business/Organization Name:
+                    <input type="text" name="organization" required title="Please enter your organization name" 
+                           autocomplete="organization">
+                </label>
+                <label>
+                    Membership Level:
+                    <select name="membership" required title="Please select a membership level">
+                        <option value="">Select a level...</option>
+                        <option value="np">NP Membership (Non-Profit)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+                <label>
+                    Business Description:
+                    <textarea name="description" title="Please describe your business"></textarea>
+                </label>
+            </fieldset>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+            <input type="submit" value="Submit Application">
+        </form>
+        </section>
+
+        <section class="membership-cards">
+            <div class="card np">
+                <h3>NP Membership</h3>
+                <p>For non-profit organizations</p>
+                <p>No fee</p>
+                <a href="#npModal" class="modal-link">Learn More</a>
+            </div>
+            <div class="card bronze">
+                <h3>Bronze Membership</h3>
+                <p>Basic benefits</p>
+                <p>$200/year</p>
+                <a href="#bronzeModal" class="modal-link">Learn More</a>
+            </div>
+            <div class="card silver">
+                <h3>Silver Membership</h3>
+                <p>Enhanced benefits</p>
+                <p>$400/year</p>
+                <a href="#silverModal" class="modal-link">Learn More</a>
+            </div>
+            <div class="card gold">
+                <h3>Gold Membership</h3>
+                <p>Premium benefits</p>
+                <p>$600/year</p>
+                <a href="#goldModal" class="modal-link">Learn More</a>
+            </div>
+        </section>
+
+        <!-- Modals -->
+        <div id="npModal" class="modal">
+            <div class="modal-content">
+                <a href="#" class="close">&times;</a>
+                <h3>NP Membership Benefits</h3>
+                <ul>
+                    <li>Free membership for non-profit organizations</li>
+                    <li>Access to member directory</li>
+                    <li>Monthly newsletter</li>
+                    <li>Basic listing on our website</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="bronzeModal" class="modal">
+            <div class="modal-content">
+                <a href="#" class="close">&times;</a>
+                <h3>Bronze Membership Benefits</h3>
+                <ul>
+                    <li>All NP benefits plus:</li>
+                    <li>10% discount on chamber events</li>
+                    <li>Quarterly training sessions</li>
+                    <li>Enhanced business listing</li>
+                    <li>Annual cost: $200</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="silverModal" class="modal">
+            <div class="modal-content">
+                <a href="#" class="close">&times;</a>
+                <h3>Silver Membership Benefits</h3>
+                <ul>
+                    <li>All Bronze benefits plus:</li>
+                    <li>20% discount on chamber events</li>
+                    <li>Monthly training sessions</li>
+                    <li>Featured listing on our website</li>
+                    <li>Two spotlight positions per year</li>
+                    <li>Annual cost: $400</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="goldModal" class="modal">
+            <div class="modal-content">
+                <a href="#" class="close">&times;</a>
+                <h3>Gold Membership Benefits</h3>
+                <ul>
+                    <li>All Silver benefits plus:</li>
+                    <li>30% discount on chamber events</li>
+                    <li>Premium training sessions</li>
+                    <li>Homepage featured position</li>
+                    <li>Monthly spotlight positions</li>
+                    <li>VIP access to special events</li>
+                    <li>Annual cost: $600</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Chamber of Commerce</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+        // Set timestamp when page loads
+        document.getElementById('timestamp').value = new Date().toISOString();
+        
+        // Modal functionality
+        document.querySelectorAll('.modal-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const modalId = this.getAttribute('href');
+                document.querySelector(modalId).style.display = 'block';
+            });
+        });
+
+        document.querySelectorAll('.close').forEach(closeBtn => {
+            closeBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                this.closest('.modal').style.display = 'none';
+            });
+        });
+
+        window.addEventListener('click', function(e) {
+            if (e.target.classList.contains('modal')) {
+                e.target.style.display = 'none';
+            }
+        });
+
+        // Footer year and last modified
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = document.lastModified;
+    </script>
+</body>
+</html>

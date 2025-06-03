@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+        .confirmation {
+            border: 1px solid #ddd;
+            padding: 2rem;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .confirmation h2 {
+            color: #4CAF50;
+            margin-top: 0;
+        }
+        .user-info {
+            margin-top: 1.5rem;
+        }
+        .user-info p {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            background-color: white;
+            border: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="confirmation">
+            <h2>Thank You for Your Application!</h2>
+            <p>We appreciate you taking the time to join our chamber of commerce. A representative will contact you shortly to complete your membership process.</p>
+            
+            <div class="user-info">
+                <h3>Your Information:</h3>
+                <script>
+                    // Parse URL parameters
+                    const urlParams = new URLSearchParams(window.location.search);
+                    
+                    // Display user information
+                    document.write(`
+                        <p><strong>Name:</strong> ${urlParams.get('firstName')} ${urlParams.get('lastName')}</p>
+                        <p><strong>Email:</strong> ${urlParams.get('email')}</p>
+                        <p><strong>Phone:</strong> ${urlParams.get('phone')}</p>
+                        <p><strong>Organization:</strong> ${urlParams.get('organization')}</p>
+                        <p><strong>Application Submitted:</strong> ${new Date(urlParams.get('timestamp')).toLocaleString()}</p>
+                    `);
+                </script>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Chamber of Commerce</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script>
+        // Footer year and last modified
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = document.lastModified;
+    </script>
+</body>
+</html>
