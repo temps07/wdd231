@@ -1,0 +1,36 @@
+@media screen and (min-width: 1025px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .gallery-card {
+        animation: fadeIn 0.5s ease-out;
+        display: grid;
+        grid-template-areas: 
+        "picture name"
+        "picture location"
+        "picture description"
+    }    
+    .gallery-card:nth-child(1) { animation-delay: 0.1s; }
+    .gallery-card:nth-child(2) { animation-delay: 0.2s; }
+    .gallery-card:nth-child(3) { animation-delay: 0.3s; }
+    .gallery-card:nth-child(4) { animation-delay: 0.4s; }
+    .gallery-card:nth-child(5) { animation-delay: 0.5s; }
+    .gallery-card:nth-child(6) { animation-delay: 0.6s; }
+    .gallery-card:nth-child(7) { animation-delay: 0.7s; }
+    .gallery-card:nth-child(8) { animation-delay: 0.8s; }
+
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Our Community</title>
+    <meta name="description" content="Discover Page.">
+    <meta name="author" content="Temple Ohanu">
+    <meta property="og:title" content="WDD 231 - Discover - Temple Ohanu">
+    <meta property="og:description" content="DIscover page of my WDD 231 assignment.">
+    <meta property="og:image" content="https://i.pinimg.com/736x/18/47/43/1847439cf9425db0179030403738b87f.jpg">
+    <meta property="og:url" content="https://temps07.github.io/wdd231/">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/discover-small.css" media="screen">
+    <link rel="stylesheet" href="styles/discover-medium.css" media="screen and (min-width: 641px)">
+    <link rel="stylesheet" href="styles/discover-large.css" media="screen and (min-width: 1025px)">
+    <script src="scripts/discover.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Community Chamber</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Discover Our Vibrant Community</h2>
+            <p>Explore the unique attractions, businesses, and landmarks that make our region special. From historical sites to modern amenities, there's something for everyone.</p>
+        </section>
+
+        <div class="discover-grid">
+            <aside class="sidebar">
+                <div class="demographics">
+                    <h3>Community Demographics</h3>
+                    <div class="demographics-item">
+                        <p><span>Population:</span> <span>85,420</span></p>
+                    </div>
+                    <div class="demographics-item">
+                        <p><span>Median Age:</span> <span>38.7</span></p>
+                    </div>
+                    <div class="demographics-item">
+                        <p><span>Median Income:</span> <span>$72,450</span></p>
+                    </div>
+                    <div class="demographics-item">
+                        <p><span>Education:</span> <span>42% Bachelor's+</span></p>
+                    </div>
+                    <div class="demographics-item">
+                        <p><span>Top Industries:</span> <span>Tech, Healthcare, Education</span></p>
+                    </div>
+                </div>
+                
+                <div class="visit-info">
+                    <h3>Visitor Information</h3>
+                    <div class="visit-message" id="visitMessage">
+                    </div>
+                </div>
+            </aside>
+
+            <section class="gallery">
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p>123 Main Street, Community City</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: info@communitychamber.org</p>
+                </div>
+                <div class="quick-links">
+                    <h3>Quick Links</h3>
+                        <a href="https://facebook.com" aria-label="Facebook">
+                            <img src="images/facebookwebp.webp" alt="Facebook Icon">
+                        </a>
+                        <a href="https://instagram.com" aria-label="Facebook">
+                            <img src="images/Instagram.webp" alt="Instagram Icon">
+                        </a>
+                        <a href="https://whatsapp.com" aria-label="Facebook">
+                            <img src="images/whatsapp.webp" alt="Whatsapp Icon">
+                        </a>
+                </div>
+                <div class="copyright">
+                    <p>&copy; <span id="currentYear"></span> Community Chamber of Commerce. All rights reserved.</p>
+                    <p>Last Modified: <span id="lastModified"></span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

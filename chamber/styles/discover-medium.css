@@ -1,0 +1,56 @@
+@media screen and (min-width: 641px) {
+
+    
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 1rem;
+    }
+
+    .gallery-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;
+    }
+
+    .card-img {
+        transition: transform 0.5s ease;
+    }
+
+    .gallery-card:hover .card-img {
+        transform: scale(1.05);
+    }
+    .gallery-card {
+        display: grid;
+        grid-template-areas: 
+        "picture name"
+        "picture location"
+        "picture description"
+    } 
+    .card-image{
+        grid-area: picture;
+    }
+    .card-content h3{
+        grid-area: name;
+    }
+    .card-content address{
+        grid-area: location;
+    }
+    .card-content p{
+        grid-area: description;
+    }
+    .btn {
+        width: 100%;
+    }
+    .footer-info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

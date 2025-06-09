@@ -1,0 +1,563 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Application Form</title>
+    <title>WDD 231 - Join Our Chamber- Temple Ohanu</title>
+    <meta name="description" content="Join Page.">
+    <meta name="author" content="Temple Ohanu">
+    <meta property="og:title" content="WDD 231 - Home - Temple Ohanu">
+    <meta property="og:description" content="Join page of my WDD 231 assignment.">
+    <meta property="og:image" content="https://i.pinimg.com/736x/18/47/43/1847439cf9425db0179030403738b87f.jpg">
+    <meta property="og:url" content="https://temps07.github.io/wdd231/">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/join-small.css" media="screen">
+    <link rel="stylesheet" href="styles/join-large.css" media="screen and (min-width: 768px)">
+    <script src="scripts/join.js"> </script>
+</head>
+<body>
+    <header>
+        <h1>Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#" class="active">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+    </main>
+</body>
+<footer>
+    
+</footer> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Our Community</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .logo h1 {
+            font-size: 1.5rem;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+        
+        nav a:hover, nav a.active {
+            background-color: var(--secondary-color);
+        }
+        
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Discover Layout */
+        .discover-grid {
+            display: grid;
+            gap: 2rem;
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .sidebar h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+        
+        .demographics {
+            margin-bottom: 2rem;
+        }
+        
+        .demographics-item {
+            margin-bottom: 1rem;
+        }
+        
+        .demographics-item p {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .visit-message {
+            background-color: var(--light-color);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+            border-left: 4px solid var(--secondary-color);
+        }
+        
+        /* Gallery */
+        .gallery {
+            display: grid;
+            gap: 2rem;
+        }
+        
+        .gallery-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: var(--transition);
+        }
+        
+        .gallery-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        
+        .gallery-card:hover img {
+            transform: scale(1.05);
+        }
+        
+        .card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .card-content {
+            padding: 1.5rem;
+        }
+        
+        .card-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .card-content address {
+            font-style: normal;
+            color: #666;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .card-content p {
+            margin-bottom: 1.5rem;
+            color: #444;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 0.6rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .footer-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+        
+        .contact-info, .quick-links {
+            text-align: left;
+        }
+        
+        .quick-links ul {
+            list-style: none;
+        }
+        
+        .quick-links a {
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .quick-links a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .copyright {
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.7);
+        }
+        
+        /* Mobile First Layout */
+        .discover-grid {
+            grid-template-areas:
+                "sidebar"
+                "gallery";
+        }
+        
+        /* Medium Screens (641px - 1024px) */
+        @media (min-width: 641px) {
+            .discover-grid {
+                grid-template-columns: 1fr 2fr;
+                grid-template-areas: "sidebar gallery";
+            }
+            
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        /* Large Screens (1025px and above) */
+        @media (min-width: 1025px) {
+            .gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        /* Assign grid areas */
+        .sidebar {
+            grid-area: sidebar;
+        }
+        
+        .gallery {
+            grid-area: gallery;
+        }
+        
+        /* Animation for gallery images */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .gallery-card {
+            animation: fadeIn 0.5s ease-out;
+        }
+        
+        .gallery-card:nth-child(1) { animation-delay: 0.1s; }
+        .gallery-card:nth-child(2) { animation-delay: 0.2s; }
+        .gallery-card:nth-child(3) { animation-delay: 0.3s; }
+        .gallery-card:nth-child(4) { animation-delay: 0.4s; }
+        .gallery-card:nth-child(5) { animation-delay: 0.5s; }
+        .gallery-card:nth-child(6) { animation-delay: 0.6s; }
+        .gallery-card:nth-child(7) { animation-delay: 0.7s; }
+        .gallery-card:nth-child(8) { animation-delay: 0.8s; }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Community Chamber</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html" class="active">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section class="hero">
+            <h2>Discover Our Vibrant Community</h2>
+            <p>Explore the unique attractions, businesses, and landmarks that make our region special. From historical sites to modern amenities, there's something for everyone.</p>
+        </section>
+
+        <div class="discover-grid">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="demographics">
+                    <h3>Community Demographics</h3>
+                    <div class="demographics-item">
+                        <p><span>Population:</span> <span>85,420</span></p>
+                    </div>
+                    <div class="demographics-item">
+                        <p><span>Median Age:</span> <span>38.7</span></p>
+                    </div>
+                    <div class="demographics-item">
+                        <p><span>Median Income:</span> <span>$72,450</span></p>
+                    </div>
+                    <div class="demographics-item">
+                        <p><span>Education:</span> <span>42% Bachelor's+</span></p>
+                    </div>
+                    <div class="demographics-item">
+                        <p><span>Top Industries:</span> <span>Tech, Healthcare, Education</span></p>
+                    </div>
+                </div>
+                
+                <div class="visit-info">
+                    <h3>Visitor Information</h3>
+                    <div class="visit-message" id="visitMessage">
+                        <!-- Message will be inserted here by JavaScript -->
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Gallery -->
+            <section class="gallery">
+                <!-- Cards will be inserted here by JavaScript -->
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p>123 Main Street, Community City</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: info@communitychamber.org</p>
+                </div>
+                <div class="quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Community Chamber of Commerce. All rights reserved.</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Attractions data
+        const attractions = [
+            {
+                name: "Riverside Park",
+                address: "250 Park Avenue",
+                description: "Beautiful 50-acre park with walking trails, playgrounds, and picnic areas. Perfect for family outings and outdoor activities.",
+                image: "images/image1.webp"
+            },
+            {
+                name: "Historic Downtown",
+                address: "Main Street District",
+                description: "Charming downtown area with boutique shops, restaurants, and historic architecture dating back to the 19th century.",
+                image: "images/image2.webp"
+            },
+            {
+                name: "Community Museum",
+                address: "456 Heritage Lane",
+                description: "Interactive museum showcasing local history, culture, and art. Features rotating exhibits and educational programs.",
+                image: "images/image3.webp"
+            },
+            {
+                name: "Lakefront Promenade",
+                address: "1000 Lakeshore Drive",
+                description: "Scenic waterfront area with a paved trail, fishing docks, and stunning views of the lake. Popular for jogging and cycling.",
+                image: "images/image4.webp"
+            },
+            {
+                name: "Tech Innovation Center",
+                address: "789 Innovation Way",
+                description: "State-of-the-art technology hub housing startups, research labs, and coworking spaces. Driving innovation in our community.",
+                image: "images/image5.webp"
+            },
+            {
+                name: "Farmers Market",
+                address: "Market Square",
+                description: "Weekly market featuring fresh produce, artisanal goods, and local crafts. Open Saturdays from May to October.",
+                image: "images/image6.webp"
+            },
+            {
+                name: "Performing Arts Center",
+                address: "321 Center Street",
+                description: "Modern venue hosting concerts, theater productions, and cultural events throughout the year. Home to our community orchestra.",
+                image: "images/image7.webp"
+            },
+            {
+                name: "Botanical Gardens",
+                address: "555 Garden Road",
+                description: "Lush 30-acre gardens featuring native plants, exotic flowers, and themed gardens. Educational programs and seasonal events.",
+                image: "images/image8.webp"
+            }
+        ];
+
+        // Function to generate gallery cards
+        function generateGallery() {
+            const gallery = document.querySelector('.gallery');
+            gallery.innerHTML = '';
+            
+            attractions.forEach(attraction => {
+                const card = document.createElement('div');
+                card.className = 'gallery-card';
+                
+                card.innerHTML = `
+                    <img src="${attraction.image}" alt="${attraction.name}" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>${attraction.name}</h3>
+                        <address>${attraction.address}</address>
+                        <p>${attraction.description}</p>
+                        <button class="btn">Learn More</button>
+                    </div>
+                `;
+                
+                gallery.appendChild(card);
+            });
+        }
+        
+        // Function to handle visit tracking
+        function trackVisits() {
+            const visitMessage = document.getElementById('visitMessage');
+            const now = Date.now();
+            const lastVisit = localStorage.getItem('lastVisit');
+            
+            if (!lastVisit) {
+                // First visit
+                visitMessage.textContent = "Welcome! Let us know if you have any questions.";
+            } else {
+                const lastVisitDate = parseInt(lastVisit);
+                const diffInMs = now - lastVisitDate;
+                const diffInDays = Math.floor(diffInMs / (1000 * 60 * 60 * 24));
+                
+                if (diffInDays < 1) {
+                    visitMessage.textContent = "Back so soon! Awesome!";
+                } else {
+                    const dayText = diffInDays === 1 ? "day" : "days";
+                    visitMessage.textContent = `You last visited ${diffInDays} ${dayText} ago.`;
+                }
+            }
+            
+            // Update last visit
+            localStorage.setItem('lastVisit', now.toString());
+        }
+        
+        // Function to set last modified date
+        function setLastModified() {
+            document.getElementById('lastModified').textContent = document.lastModified;
+        }
+        
+        // Initialize the page
+        window.onload = function() {
+            generateGallery();
+            trackVisits();
+            setLastModified();
+        };
+    </script>
+</body>
+</html>

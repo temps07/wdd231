@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Riverside Park",
+        "address": "250 Park Avenue",
+        "description": "Beautiful 50-acre park with walking trails, playgrounds, and picnic areas. Perfect for family outings and outdoor activities.",
+        "image": "images/image1.webp"
+    },
+    {
+        "name": "Historic Downtown",
+        "address": "Main Street District",
+        "description": "Charming downtown area with boutique shops, restaurants, and historic architecture dating back to the 19th century.",
+        "image": "images/image2.webp"
+    },
+    {
+        "name": "Community Museum",
+        "address": "456 Heritage Lane",
+        "description": "Interactive museum showcasing local history, culture, and art. Features rotating exhibits and educational programs.",
+        "image": "images/image3.webp"
+    },
+    {
+        "name": "Lakefront Promenade",
+        "address": "1000 Lakeshore Drive",
+        "description": "Scenic waterfront area with a paved trail, fishing docks, and stunning views of the lake. Popular for jogging and cycling.",
+        "image": "images/image4.webp"
+    },
+    {
+        "name": "Tech Innovation Center",
+        "address": "789 Innovation Way",
+        "description": "State-of-the-art technology hub housing startups, research labs, and coworking spaces. Driving innovation in our community.",
+        "image": "images/image5.webp"
+    },
+    {
+        "name": "Farmers Market",
+        "address": "Market Square",
+        "description": "Weekly market featuring fresh produce, artisanal goods, and local crafts. Open Saturdays from May to October.",
+        "image": "images/image6.webp"
+    },
+    {
+        "name": "Performing Arts Center",
+        "address": "321 Center Street",
+        "description": "Modern venue hosting concerts, theater productions, and cultural events throughout the year. Home to our community orchestra.",
+        "image": "images/image7.webp"
+    },
+    {
+        "name": "Botanical Gardens",
+        "address": "555 Garden Road",
+        "description": "Lush 30-acre gardens featuring native plants, exotic flowers, and themed gardens. Educational programs and seasonal events.",
+        "image": "images/image8.webp"
+    }
+]
