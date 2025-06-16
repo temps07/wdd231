@@ -1,0 +1,374 @@
+[
+    {
+        "id": 1,
+        "name": "Quick Breakfast Bowl",
+        "category": "breakfast",
+        "description": "A healthy and delicious breakfast ready in under 10 minutes.",
+        "image": "images/breakfast.jpg",
+        "prepTime": "5 mins",
+        "cookTime": "5 mins",
+        "ingredients": [
+            "1/2 cup Greek yogurt",
+            "1/4 cup granola",
+            "1/2 banana, sliced",
+            "1 tbsp honey",
+            "1 tbsp chia seeds"
+        ],
+        "instructions": [
+            "Scoop yogurt into a bowl",
+            "Top with granola and banana slices",
+            "Drizzle with honey",
+            "Sprinkle chia seeds on top",
+            "Enjoy immediately"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Meal Prep Pasta",
+        "category": "lunch",
+        "description": "Perfect for busy weeks—make ahead and enjoy all week long.",
+        "image": "images/pasta.jpg",
+        "prepTime": "10 mins",
+        "cookTime": "15 mins",
+        "ingredients": [
+            "8 oz pasta",
+            "1 cup cherry tomatoes, halved",
+            "1/2 cucumber, diced",
+            "1/4 cup feta cheese",
+            "2 tbsp olive oil",
+            "1 tbsp lemon juice",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Cook pasta according to package instructions",
+            "Drain and rinse with cold water",
+            "In a large bowl, combine pasta with tomatoes and cucumber",
+            "Add feta cheese",
+            "Whisk together olive oil, lemon juice, salt, and pepper",
+            "Pour dressing over pasta and toss to combine",
+            "Store in airtight containers for up to 5 days"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "3-Ingredient Cookies",
+        "category": "dessert",
+        "description": "Simple and sweet cookies with just three ingredients.",
+        "image": "images/cookie.jpg",
+        "prepTime": "5 mins",
+        "cookTime": "12 mins",
+        "ingredients": [
+            "1 cup peanut butter",
+            "1 cup sugar",
+            "1 egg"
+        ],
+        "instructions": [
+            "Preheat oven to 350°F (175°C)",
+            "Mix all ingredients in a bowl",
+            "Roll into 1-inch balls and place on baking sheet",
+            "Flatten with a fork in a criss-cross pattern",
+            "Bake for 10-12 minutes",
+            "Let cool before serving"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Veggie Stir Fry",
+        "category": "dinner",
+        "description": "A quick and healthy dinner packed with fresh vegetables.",
+        "image": "images/veggie.jpg",
+        "prepTime": "10 mins",
+        "cookTime": "10 mins",
+        "ingredients": [
+            "2 cups mixed vegetables (bell peppers, broccoli, carrots)",
+            "1 tbsp vegetable oil",
+            "2 cloves garlic, minced",
+            "1 tbsp soy sauce",
+            "1 tsp ginger, grated",
+            "1/2 tsp red pepper flakes (optional)"
+        ],
+        "instructions": [
+            "Heat oil in a large pan or wok",
+            "Add garlic and ginger, sauté for 30 seconds",
+            "Add vegetables and stir fry for 5-7 minutes",
+            "Add soy sauce and red pepper flakes",
+            "Cook for another 2 minutes",
+            "Serve hot with rice or noodles"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Avocado Toast",
+        "category": "breakfast",
+        "description": "Creamy avocado on toasted whole-grain bread, topped with salt and pepper.",
+        "image": "images/toast.jpg",
+        "prepTime": "5 mins",
+        "cookTime": "2 mins",
+        "ingredients": [
+            "2 slices whole grain bread",
+            "1 ripe avocado",
+            "1/2 lemon, juiced",
+            "Salt and pepper to taste",
+            "Red pepper flakes (optional)"
+        ],
+        "instructions": [
+            "Toast bread to desired crispness",
+            "Cut avocado in half, remove pit, and scoop flesh into a bowl",
+            "Mash avocado with lemon juice, salt, and pepper",
+            "Spread avocado mixture on toast",
+            "Sprinkle with red pepper flakes if desired",
+            "Serve immediately"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Chocolate Lava Cake",
+        "category": "dessert",
+        "description": "Warm, gooey chocolate cake with a molten centre - perfect for chocolate lovers.",
+        "image": "images/cake.jpg",
+        "prepTime": "15 mins",
+        "cookTime": "12 mins",
+        "ingredients": [
+            "1/2 cup butter",
+            "4 oz dark chocolate",
+            "1 cup powdered sugar",
+            "2 eggs",
+            "2 egg yolks",
+            "1 tsp vanilla extract",
+            "1/2 cup all-purpose flour"
+        ],
+        "instructions": [
+            "Preheat oven to 425°F (220°C)",
+            "Butter and flour four ramekins",
+            "Melt butter and chocolate together",
+            "Whisk in sugar, then eggs and yolks",
+            "Stir in vanilla and flour",
+            "Divide batter among ramekins",
+            "Bake for 12-14 minutes",
+            "Let stand 1 minute, then invert onto plates"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Grilled Salmon",
+        "category": "dinner",
+        "description": "Perfectly grilled salmon fillet served with a side of steamed vegetables.",
+        "image": "images/salmon.jpg",
+        "prepTime": "10 mins",
+        "cookTime": "10 mins",
+        "ingredients": [
+            "2 salmon fillets",
+            "2 tbsp olive oil",
+            "1 lemon, sliced",
+            "1 tsp dried dill",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Preheat grill to medium-high heat",
+            "Brush salmon with olive oil",
+            "Season with dill, salt, and pepper",
+            "Place lemon slices on top",
+            "Grill for 4-5 minutes per side",
+            "Serve with steamed vegetables"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Smoothie Bowl",
+        "category": "breakfast",
+        "description": "A thick and creamy smoothie bowl topped with fresh fruits, granola and nuts.",
+        "image": "images/smoothie.jpg",
+        "prepTime": "5 mins",
+        "cookTime": "0 mins",
+        "ingredients": [
+            "1 frozen banana",
+            "1/2 cup frozen berries",
+            "1/4 cup Greek yogurt",
+            "1/4 cup milk",
+            "Toppings: granola, fresh fruit, nuts, coconut flakes"
+        ],
+        "instructions": [
+            "Blend banana, berries, yogurt, and milk until smooth",
+            "Pour into a bowl",
+            "Add desired toppings",
+            "Enjoy immediately"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Pancakes",
+        "category": "breakfast",
+        "description": "Fluffy pancakes served with maple syrup and a pat of butter.",
+        "image": "images/pancake.jpg",
+        "prepTime": "10 mins",
+        "cookTime": "15 mins",
+        "ingredients": [
+            "1 cup all-purpose flour",
+            "1 tbsp sugar",
+            "2 tsp baking powder",
+            "1/4 tsp salt",
+            "1 cup milk",
+            "1 egg",
+            "2 tbsp melted butter"
+        ],
+        "instructions": [
+            "Whisk dry ingredients together",
+            "In another bowl, mix milk, egg, and butter",
+            "Combine wet and dry ingredients",
+            "Heat a griddle over medium heat",
+            "Pour 1/4 cup batter for each pancake",
+            "Cook until bubbles form, then flip",
+            "Serve with maple syrup and butter"
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Quinoa Salad",
+        "category": "lunch",
+        "description": "A refreshing salad made with quinoa, cucumbers, tomatoes and feta cheese.",
+        "image": "images/salad.jpg",
+        "prepTime": "15 mins",
+        "cookTime": "15 mins",
+        "ingredients": [
+            "1 cup quinoa",
+            "2 cups water",
+            "1 cucumber, diced",
+            "1 cup cherry tomatoes, halved",
+            "1/2 cup feta cheese, crumbled",
+            "2 tbsp olive oil",
+            "1 tbsp lemon juice",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Rinse quinoa thoroughly",
+            "Bring water to boil, add quinoa, reduce heat and simmer for 15 minutes",
+            "Fluff with fork and let cool",
+            "Combine quinoa with vegetables and feta",
+            "Whisk together olive oil, lemon juice, salt, and pepper",
+            "Pour dressing over salad and toss to combine",
+            "Chill before serving"
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Overnight Oats",
+        "category": "breakfast",
+        "description": "A no-cook breakfast that's ready when you wake up.",
+        "image": "images/oats.jpg",
+        "prepTime": "5 mins",
+        "cookTime": "0 mins",
+        "ingredients": [
+            "1/2 cup rolled oats",
+            "1/2 cup milk",
+            "1/2 cup Greek yogurt",
+            "1 tbsp honey",
+            "1/2 tsp vanilla extract",
+            "Toppings: fresh fruit, nuts, seeds"
+        ],
+        "instructions": [
+            "Combine all ingredients in a jar",
+            "Stir well to combine",
+            "Cover and refrigerate overnight",
+            "Add toppings before serving"
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Chicken Wrap",
+        "category": "lunch",
+        "description": "A quick and portable lunch option packed with protein.",
+        "image": "images/wrap.jpg",
+        "prepTime": "10 mins",
+        "cookTime": "0 mins",
+        "ingredients": [
+            "1 large tortilla",
+            "1/2 cup cooked chicken, shredded",
+            "1/4 cup lettuce, shredded",
+            "1/4 cup tomatoes, diced",
+            "2 tbsp ranch dressing",
+            "1/4 cup cheese, shredded"
+        ],
+        "instructions": [
+            "Lay tortilla flat",
+            "Spread ranch dressing in center",
+            "Layer with chicken, lettuce, tomatoes, and cheese",
+            "Fold sides in, then roll up tightly",
+            "Cut in half and serve"
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Vegetable Soup",
+        "category": "dinner",
+        "description": "A comforting bowl of soup packed with seasonal vegetables.",
+        "image": "images/soup.jpg",
+        "prepTime": "15 mins",
+        "cookTime": "30 mins",
+        "ingredients": [
+            "1 tbsp olive oil",
+            "1 onion, diced",
+            "2 carrots, diced",
+            "2 celery stalks, diced",
+            "3 cloves garlic, minced",
+            "4 cups vegetable broth",
+            "1 can diced tomatoes",
+            "1 tsp dried thyme",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Heat oil in a large pot",
+            "Sauté onion, carrots, and celery for 5 minutes",
+            "Add garlic and cook 1 minute more",
+            "Add broth, tomatoes, and thyme",
+            "Bring to boil, then simmer for 20 minutes",
+            "Season with salt and pepper",
+            "Serve hot"
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Fruit Parfait",
+        "category": "dessert",
+        "description": "Layers of yogurt, granola, and fresh fruit make a light and healthy dessert.",
+        "image": "images/parfait.jpg",
+        "prepTime": "10 mins",
+        "cookTime": "0 mins",
+        "ingredients": [
+            "1 cup Greek yogurt",
+            "1/2 cup granola",
+            "1 cup mixed berries",
+            "1 tbsp honey"
+        ],
+        "instructions": [
+            "Layer yogurt, granola, and fruit in a glass",
+            "Repeat layers",
+            "Drizzle with honey",
+            "Serve immediately"
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Egg Muffins",
+        "category": "breakfast",
+        "description": "Portable egg cups perfect for meal prep.",
+        "image": "images/eggmuffins.jpg",
+        "prepTime": "10 mins",
+        "cookTime": "20 mins",
+        "ingredients": [
+            "6 eggs",
+            "1/4 cup milk",
+            "1/2 cup cheese, shredded",
+            "1/2 cup vegetables (spinach, bell peppers, onions)",
+            "Salt and pepper to taste"
+        ],
+        "instructions": [
+            "Preheat oven to 350°F (175°C)",
+            "Whisk eggs and milk together",
+            "Stir in cheese and vegetables",
+            "Season with salt and pepper",
+            "Pour into greased muffin tin",
+            "Bake for 18-20 minutes",
+            "Store in refrigerator for up to 5 days"
+        ]
+    }
+]
