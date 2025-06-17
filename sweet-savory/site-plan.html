@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet & Savory - Site Plan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        /* Color Schema */
+        :root {
+            --coral: #FF6F61;
+            --peach: #FFF8F0;
+            --dark-gray: #4A4A4A;
+            --gold: #FFD166;
+        }
+        
+        /* Typography */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--dark-gray);
+            background-color: var(--peach);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--coral);
+        }
+        
+        .special-heading {
+            font-family: 'Pacifico', cursive;
+        }
+        
+        /* Layout */
+        header {
+            background-color: var(--peach);
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 2px solid var(--coral);
+        }
+        
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: var(--gold);
+            font-family: 'Playfair Display', serif;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .color-swatch {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin-right: 10px;
+            border: 1px solid #ddd;
+            vertical-align: middle;
+        }
+        
+        footer {
+            background-color: var(--dark-gray);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        a {
+            color: var(--coral);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sweet & Savory</h1>
+        <p class="special-heading">Quick Recipes for Busy Lives - Site Plan</p>
+    </header>
+    
+    <main>
+        <section id="site-name">
+            <h2>1. Site Name</h2>
+            <p><strong>Sweet & Savory: Quick Recipes for Busy Lives</strong></p>
+            <p><strong>Reason:</strong><br>
+            The name reflects the dual focus of the site (sweet desserts and savory meals) while emphasizing quick, student-friendly recipes. It's memorable, alliterative, and clearly communicates the content's variety and audience (busy students/professionals).</p>
+        </section>
+        
+        <section id="site-purpose">
+            <h2>2. Site Purpose</h2>
+            <p><strong>Primary Goal:</strong><br>
+            To provide easy, affordable, and time-saving recipes tailored for students and busy individuals.</p>
+            
+            <p><strong>Services/Content Offered:</strong></p>
+            <ul>
+                <li><strong>Recipe Database:</strong> Filterable by meal type (breakfast, lunch, dinner, dessert).</li>
+                <li><strong>Meal-Prep Guides:</strong> Tips for batch cooking and grocery budgeting.</li>
+                <strong>Skill-Building Resources:</strong> Cooking basics, substitution charts, and kitchen hacks.</li>
+                <li><strong>Community Features:</strong> User-submitted recipes and ratings (future expansion).</li>
+            </ul>
+        </section>
+        
+        <section id="scenarios">
+            <h2>3. Scenarios</h2>
+            <p><strong>Target Audience Questions:</strong></p>
+            <ol>
+                <li><em>"What are some healthy breakfasts I can make in under 10 minutes before class?"</em><br>
+                    - <strong>Solution:</strong> Quick-filter recipes by "breakfast" and "under 10 mins" tags.</li>
+                <li><em>"How can I cook meals for the week with only $50?"</em><br>
+                    - <strong>Solution:</strong> Budget-friendly meal plans and cost-saving tips section.</li>
+                <li><em>"I'm a beginner cook—where can I find foolproof recipes?"</em><br>
+                    - <strong>Solution:</strong> "Beginner-Friendly" recipe filter and video tutorials.</li>
+            </ol>
+        </section>
+        
+        <section id="color-schema">
+            <h2>4. Color Schema</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Color</th>
+                        <th>Hex Code</th>
+                        <th>Usage Example</th>
+                        <th>Swatch</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Coral</td>
+                        <td>#FF6F61</td>
+                        <td>Headings (h1, h2), buttons, accents</td>
+                        <td><span class="color-swatch" style="background-color: #FF6F61;"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Soft Peach</td>
+                        <td>#FFF8F0</td>
+                        <td>Background color, card highlights</td>
+                        <td><span class="color-swatch" style="background-color: #FFF8F0;"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Dark Gray</td>
+                        <td>#4A4A4A</td>
+                        <td>Body text, footer background</td>
+                        <td><span class="color-swatch" style="background-color: #4A4A4A;"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Gold Accent</td>
+                        <td>#FFD166</td>
+                        <td>Hover effects, decorative elements</td>
+                        <td><span class="color-swatch" style="background-color: #FFD166;"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><strong>Why These Colors?</strong><br>
+            - <strong>Coral:</strong> Stimulates appetite (food psychology) and creates visual hierarchy.<br>
+            - <strong>Peach:</strong> Warm and inviting, reduces eye strain for text-heavy content.</p>
+        </section>
+        
+        <section id="typography">
+            <h2>5. Typography</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Font Family</th>
+                        <th>Category</th>
+                        <th>Usage</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Playfair Display</strong></td>
+                        <td>Serif</td>
+                        <td>Main headings (h1, h2)</td>
+                        <td style="font-family: 'Playfair Display', serif;">"Quick Breakfast Ideas"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Open Sans</strong></td>
+                        <td>Sans-serif</td>
+                        <td>Body text, navigation, buttons</td>
+                        <td style="font-family: 'Open Sans', sans-serif;">Recipe instructions, paragraphs</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pacifico</strong></td>
+                        <td>Handwritten</td>
+                        <td>Special headings (callouts)</td>
+                        <td style="font-family: 'Pacifico', cursive;">"Weekly Featured Recipe!"</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><strong>Rationale:</strong><br>
+            - <strong>Playfair Display:</strong> Elegant and readable for titles.<br>
+            - <strong>Open Sans:</strong> Clean and modern for readability on all devices.<br>
+            - <strong>Pacifico:</strong> Adds playful contrast for highlights.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Sweet & Savory. All rights reserved.</p>
+    </footer>
+</body>
+</html>
